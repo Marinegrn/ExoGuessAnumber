@@ -34,7 +34,7 @@ function gamePlay() {
     //Déclaration des variables qui stockent en valeurs le return des fonctions qu'on appelle 
     let askNumber = promptNumber('Le joueur 1 commence la partie !');
     let givenNumber = promptNumber('Donne-moi un nombre'); 
-    let gameWin = didIWin(givenNumber, askNumber);
+    let gameWin = didIWin(givenNumber);
 
     // Boucle "Tant que gameWin est valorisé à false, alors c'est perdu ! Il faut rejouer et donner un autre nombre"
     while (gameWin == false)  {
@@ -52,13 +52,13 @@ gamePlay();
 // Création de la fonction du joueur 1
 function askPlayerOne() {
 
-    askNumber = promptNumber('Donne-moi un nombre entre 0 et 50');
+    askNumber = promptNumber('Le nombre doit être compris entre 0 et 50. Essaye encore !');
 
     if (askNumber > 50) {
         alert('Le nombre doit être compris entre 0 et 50 !');
         return askPlayerOne();
     } else {
-        return askNumber;
+        return (winner);
     }
 
 }
