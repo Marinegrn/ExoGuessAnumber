@@ -7,7 +7,7 @@ let nbGuess2 = 0;
 // Déclaration de range minimum et maximum
 let rangeMin = 0;
 let rangeMax = 50;
- 
+
 
 // Création d'une fonction qui demande un nombre au joueur
 function promptNumber(message) {
