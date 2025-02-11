@@ -1,8 +1,6 @@
-// Déclaration de 2 variables, joueur 1, joueur 2 et nombres devinés
+// Déclaration de 2 variables, joueur 1 et nombres devinés
 let player1 = 'Joueur 1';
-let player2 = 'Joueur 2';
 let nbGuess1 = 0;
-let nbGuess2 = 0;
 
 // Déclaration de range minimum et maximum
 let rangeMin = 0;
@@ -70,7 +68,7 @@ function gamePlay() {
 gamePlay();
 
 
-// Création de la fonction du joueur 1
+// Création de la fonction pour le joueur 1
 function askPlayerOne() {
 
     let askNumber = promptNumber('Le nombre doit être compris entre 0 et 50. Essaye encore !');
