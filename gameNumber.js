@@ -27,14 +27,14 @@ function didIWin(givenNumber) {
     if (givenNumber < 22) {               
         alert('Plus grand ! \nNombre de tentatives: ' + nbGuess1);
 
-        if (givenNumber > rangeMin) { // Si le nombre donnée par le joueur et supérieur au range minimum
+        if (givenNumber > rangeMin) { // Si le nombre donnée par le joueur est supérieur au range minimum
             rangeMin = givenNumber;  // Le nombre donée devient le nouveau Range min ! 
         }
 
     } else if (givenNumber > 22) {
         alert('Plus petit. \nNombre de tentatives: ' + nbGuess1);
 
-        if (givenNumber < rangeMax) { // Si le nombre donnée par le joueur et supérieur au range maximum
+        if (givenNumber < rangeMax) { // Si le nombre donnée par le joueur est inférieur au range maximum
             rangeMax = givenNumber; // // Le nombre donnée devient le nouveau Range max !
         }
 
